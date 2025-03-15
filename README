@@ -1,0 +1,14 @@
+Install Go (if not already installed).
+Clone the repository and navigate to the project directory.
+Run go run main.go to start the server.
+Use curl or Postman to test the API:
+
+    Check balance: GET http://localhost:8080/balance?name=Mark
+    Transfer money: POST http://localhost:8080/transfer with JSON payload:
+
+{
+  "from": "Mark",
+  "to": "Jane",
+  "amount": 20
+}
+
